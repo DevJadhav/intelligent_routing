@@ -1,6 +1,7 @@
 # Intelligent Routing
 
-[![PyPI version](https://badge.fury.io/py/intelligent-routing.svg)](https://badge.fury.io/py/intelligent-routing)
+[![PyPI version](https://img.shields.io/pypi/v/intelligent-routing.svg)](https://pypi.org/project/intelligent-routing/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/intelligent-routing.svg)](https://pypi.org/project/intelligent-routing/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A high-performance Rust library implementing intelligent routing algorithms for optimizing request distribution across thousands of accelerators (GPUs, TPUs, or other compute units).
