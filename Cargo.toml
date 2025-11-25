@@ -1,0 +1,25 @@
+[package]
+name = "intelligent_routing"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Intelligent routing algorithms for optimizing request distribution across accelerators"
+repository = "https://github.com/yourusername/intelligent_routing"
+keywords = ["load-balancing", "routing", "accelerator", "gpu", "distributed"]
+categories = ["algorithms", "network-programming"]
+
+[lib]
+name = "intelligent_routing"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "intelligent_routing"
+path = "src/main.rs"
+
+[features]
+default = ["python"]
+python = ["pyo3"]
+
+[dependencies]
+rand = "0.9.2"
+pyo3 = { version = "0.23.3", features = ["extension-module"], optional = true }

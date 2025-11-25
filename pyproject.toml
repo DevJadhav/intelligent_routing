@@ -1,0 +1,50 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "intelligent-routing"
+version = "0.1.0"
+description = "High-performance intelligent routing algorithms for optimizing request distribution across accelerators (GPUs, TPUs)"
+authors = [{name = "Dev Jadhav", email = "devj7594@gmail.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+keywords = ["load-balancing", "routing", "accelerator", "gpu", "distributed", "p2c", "round-robin"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: System :: Distributed Computing",
+    "Topic :: System :: Networking",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/intelligent_routing"
+Repository = "https://github.com/yourusername/intelligent_routing"
+Documentation = "https://github.com/yourusername/intelligent_routing#readme"
+"Bug Tracker" = "https://github.com/yourusername/intelligent_routing/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "maturin>=1.0"]
+
+[tool.maturin]
+features = ["pyo3/extension-module", "python"]
+module-name = "intelligent_routing"
+bindings = "pyo3"
+strip = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
